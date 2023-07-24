@@ -3,10 +3,10 @@
 
 
 
+
 body {
   background-color: #F6F4EB;
   color: #4682A9;
-  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -80,6 +80,10 @@ a:hover {
 }
 
 .red-btn{
-  background-color: #FF6969;
-  border-radius: 4px;
+  background-color: #A6D0DD;
+  border-radius: 6px;
+  padding: 16px 32px;
+  font-size: 12px;
+  color: #44423d;
+  font-family: 'Open Sans', sans-serif;
 }
