@@ -2,7 +2,10 @@
 
 
 
-
+.header {
+  height:100%;
+  background-color: #4682A9;
+}
 
 body {
   background-color: #F6F4EB;
@@ -31,15 +34,15 @@ a:hover {
 }
 
 .container {
-  width: 400px;
-  margin: 40px auto;
+  width: 100%;
+  margin: 60px auto;
 }
 .card {
   background-color: #F6F4EB;
   padding: 40px;
   margin: 20px 0px;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
 
 }
