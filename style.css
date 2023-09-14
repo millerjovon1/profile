@@ -22,6 +22,9 @@ h1, h2, h3 {
   opacity: 1;
 
 }
+p{
+  font-family: 'Open Sans', sans-serif;
+}
 
 a {
   color: #4682A9;
@@ -48,7 +51,10 @@ a:hover {
 }
 
 .img-circle {
-  border-radius: 150px;
+  border-radius: 200px;
+  height: 300px;
+  width: 300px;
+
 }
 
 .inline-list{
@@ -60,6 +66,47 @@ a:hover {
   gap: 24px;
   font-size: 24px;
 }
+.bio{
+  margin: 4px 4px;
+  width: 100%;
+  padding: 10px;
+  display:flex;
+  align-items: flex-start;
+  align-items: center;
+
+}  /*
+ width:400px; */
+ .avatar {
+  display: flex;
+  align-items: center;
+  align-content: space-evenly;
+ }
+ .title{
+  width:100%;
+ }
+
+.about-me {
+  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #A6D0DD ;
+  width: 100%;
+  color:black;
+
+}
+.about-text {
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+}
+
+
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
