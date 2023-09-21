@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script src="https://static.cargo.site/scripts/loader.js" data-name="cycle"></script>
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js">
+    </script>
+
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +16,185 @@
 </head>
 
 <body>
-  <div class ="container">
-    <div class ="card">
-      <img src="images/profile_pic.JPG " alt = "My profile picture" height= "200" class ="img-circle">
-      <h1>Jovon Miller</h1>
-      <h2>Programming 💻</h2>
-      <h3> <a href="https://linktr.ee/monsieurjovoni"> My Button</a></h3>
+
+    <div class ="bio">
+      <div class="profile">
+        <img src="images/profile_photo.jpg " alt = "My profile picture" height= "200" class ="img-circle">
+        <h1>Jovon Miller</h1>
+        <div class="skill-cycle">
+          <ul class="t">
+            <li id="skills">Video Editor</li>
+            <li id="skills">Music Producer</li>
+            <li id="skills">Audio Engineer</li>
+            <li id="skills">Full-Stack developer</li>
+            <li id="skills">Entreprenuer</li>
+              </ul>
+            </div>
+        <ul class="inline-list">
+          <li><a href="https://github.com/millerjovon1"><i class="fa-brands fa-square-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/jovon-miller/"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li> <a href="https://monsieurjovoni.wixsite.com/dasgoodmusic"><i class="fa-solid fa-music"></i></a></li>
+          <li id="resume"> <a href="jovon_miller_resume.pdf" download="Resume">Resume</a></li>
+
+        </ul>
+      </div>
+
+      <div class="thin-dash">
+        <h1>About Me</h1>
+        <p> Hi, I’m Jovon.<br>
+          I made the transition into web development and software engineering in 2023 after completing Le Wagon Tokyo web developement bootcamp(9 week intensive fullstack coding bootcamp).
+          <br>
+          I recently moved back to America after spending 3 years in Japan. In my free time I enjoy spending time with my family, and tending to my music or web related projects.
+          <br>
+          <br>
+          I am currently working on my app Flip-it! The ultimate music collaboration platform, as well as preparing my business for music licensing opportunities.
+        </p>
+      </div>
+      <div class="tech-stacks">
+        <i id="lang-icon" class="devicon-ruby-plain-wordmark colored"></i>
+        <i id="lang-icon" class="devicon-rails-plain-wordmark colored"></i>
+        <i id="lang-icon"class="devicon-postgresql-plain-wordmark colored"></i>
+        <i id="lang-icon"class="devicon-javascript-plain colored"></i>
+        <i id="lang-icon"class="devicon-html5-plain-wordmark colored"></i>
+        <i id="lang-icon"class="devicon-css3-plain-wordmark colored"></i>
+        <i id="lang-icon"class="devicon-figma-plain colored"></i>
+        <i id="lang-icon"class="devicon-bootstrap-plain-wordmark colored"></i>
+      </div>
+
     </div>
 
-    <div class = "card">
-      <ul class="inline-list">
-      <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F"><i class="fa-brands fa-twitter"></i></a></li>
-      <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-      <li> <a href="https://www.youtube.com/watch?v=qNytS9-9Otk"><i class="fa-brands fa-youtube"></i></a></li>
-      </ul>
+    <div class="project-container">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <div class="flip-it">
+        <img src="images/banner_photo.jpg" alt="flip-it-pitch" height="265">
+        <div class="project-info-text">
+          <p class="text-left">Lead Developer - Product Manger</p>
+          <h2 class="text-left mt-4">
+            <strong>
+              Flip It!
+            </strong>
+          </h2>
+          <p class="text-left"> The ultimate collaborate platform for. A music library application created by users which allows musicians to sample and remix each others music. Flip it! was created by myself, and developed by a team of 4 within a 2 week life-cycle. I am currently deveoping this application.<br>
+          view app <a href="https://www.flip-it.live"><i id="app-link" class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+          <div class="project-details text-left mt-2">
+           <h2>Tech Stacks</h2>
+            <div  class="tech-stack-small">
+              <i id="lang-icon-small" class="devicon-ruby-plain-wordmark colored"></i>
+              <i id="lang-icon-small" class="devicon-rails-plain-wordmark colored"></i>
+              <i id="lang-icon-small"class="devicon-postgresql-plain-wordmark colored"></i>
+              <i id="lang-icon-small"class="devicon-javascript-plain colored"></i>
+              <i id="lang-icon-small"class="devicon-html5-plain-wordmark colored"></i>
+              <i id="lang-icon-small"class="devicon-css3-plain-wordmark colored"></i>
+              <i id="lang-icon-small"class="devicon-figma-plain colored"></i>
+              <i id="lang-icon-small"class="devicon-bootstrap-plain-wordmark colored"></i>
+             </div>
+           </div>
+        </div>
+      </div>
+
+      <div class="project-img">
+        <img src="images/flip_it_home_1.png" alt="flip it home 2" height="500">
+      </div>
+
+      <!-- <div class="snapshots">
+        <img src="images/flip_it_home_2.png" alt="flip it home 2" height="50">
+        <img src="images/flip_it_index.png" alt="flip it index page" height="50">
+        <img src="images/flip_it_search.png" alt="flip it search page" height="50">
+      </div> -->
+
+      </div>
+
+      <div class="project-card">
+        <div class="flip-it">
+        <!-- <img src="images/banner_photo.jpg" alt="flip-it-pitch" height="265" class="img-round"> -->
+        <div class="project-info-text">
+          <p class="text-left">Lead Developer</p>
+          <h2 class="text-left mt-4">
+            <strong>
+              Dogs for Days
+            </strong>
+          </h2>
+          <p class="text-left"> Airbnb clone, which allows dog owners to rent out thier dog, and dog lovers to rent dogs. Dogs for days was developed by a team of 4 within a 1 week life-cycle.<br>
+            view app <a href="https://dogs-for-days-97b3ca7f74fc.herokuapp.com/dogs"><i id="app-link" class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+          <div class="project-details text-left mt-2">
+           <h2>Tech Stacks</h2>
+            <div  class="tech-stack-small">
+              <i id="lang-icon-small" class="devicon-ruby-plain-wordmark colored"></i>
+              <i id="lang-icon-small" class="devicon-rails-plain-wordmark colored"></i>
+              <i id="lang-icon-small"class="devicon-postgresql-plain-wordmark colored"></i>
+              <i id="lang-icon-small"class="devicon-javascript-plain colored"></i>
+              <i id="lang-icon-small"class="devicon-html5-plain-wordmark colored"></i>
+              <i id="lang-icon-small"class="devicon-css3-plain-wordmark colored"></i>
+              <i id="lang-icon-small"class="devicon-figma-plain colored"></i>
+              <i id="lang-icon-small"class="devicon-bootstrap-plain-wordmark colored"></i>
+             </div>
+           </div>
+        </div>
+      </div>
+
+      <div class="project-img">
+        <img src="images/dogs_for_days.png" alt="dogs-for-days" height="460">
+      </div>
+
+
+      <!-- <div class="snapshots">
+        <img src="images/flip_it_home_2.png" alt="flip it home 2" height="50">
+        <img src="images/flip_it_index.png" alt="flip it index page" height="50">
+        <img src="images/flip_it_search.png" alt="flip it search page" height="50">
+      </div> -->
+
+      </div>
+      <div class="project-card">
+        <div class="flip-it">
+        <!-- <img src="images/banner_photo.jpg" alt="flip-it-pitch" height="265" class="img-round"> -->
+        <div class="project-info-text">
+          <p class="text-left">Lead Developer</p>
+          <h2 class="text-left mt-4">
+            <strong>
+              Movie list
+            </strong>
+          </h2>
+          <p class="text-left"> A movie watchlist application which allows users to browse and bookmark movies to watch later.<br>
+            view app <a href="https://movie-list-30de1af94e24.herokuapp.com/"><i id="app-link" class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+          <div class="project-details text-left mt-2">
+           <h2>Tech Stacks</h2>
+            <div  class="tech-stack-small">
+              <i id="lang-icon-small" class="devicon-ruby-plain-wordmark colored"></i>
+              <i id="lang-icon-small" class="devicon-rails-plain-wordmark colored"></i>
+              <i id="lang-icon-small"class="devicon-postgresql-plain-wordmark colored"></i>
+              <i id="lang-icon-small"class="devicon-html5-plain-wordmark colored"></i>
+              <i id="lang-icon-small"class="devicon-css3-plain-wordmark colored"></i>
+              <i id="lang-icon-small"class="devicon-bootstrap-plain-wordmark colored"></i>
+             </div>
+           </div>
+        </div>
+      </div>
+
+      <div class="project-img">
+        <img src="images/night_watch.png" alt="Night-^watch" height="460">
+      </div>
+
+
+      <!-- <div class="snapshots">
+        <img src="images/flip_it_home_2.png" alt="flip it home 2" height="50">
+        <img src="images/flip_it_index.png" alt="flip it index page" height="50">
+        <img src="images/flip_it_search.png" alt="flip it search page" height="50">
+      </div> -->
+
+      </div>
     </div>
-    </div>
+    <div class = "card d-flex">
+      <h2>Contact</h2>
+      <p>millerjovon0@gmail.com</p>
+   </div>
 </body>
 </html>
+<!-- I am currently working on my app Flip-it! The ultimate music collaboration platform! As well as producing an album and preparing my business for licensing opportunities. -->
+
+<!-- <ul id="" class="inline-list">
+  <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F"><i class="fa-brands fa-twitter"></i></a></li>
+  <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+  <li> <a href="https://www.youtube.com/watch?v=qNytS9-9Otk"><i class="fa-brands fa-youtube"></i></a></li>
+</ul>
+</div> -->
