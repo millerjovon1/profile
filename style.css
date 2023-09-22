@@ -83,7 +83,7 @@ a:hover {
 }
 
 .thin-dash {
-  width: 100%;
+  width: 360px;
   border-top:  1px solid #F6F4EB;
 }
 .about-text {
@@ -124,7 +124,7 @@ a:hover {
 
 }
 #lang-icon {
-  font-size: 152px;
+  font-size: 160px;
 }
 .project-container {
   margin: 40px;
