@@ -8,7 +8,7 @@
 } */
 
 body {
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background-color: #A6D0DD;
@@ -16,8 +16,10 @@ body {
     margin: 0;
     padding: 0;
 }
-.wrapper {
- width: 100%;  /* margin: 60px auto; */
+.wrapper-main {
+ width: 1200px;
+ background-color: #A6D0DD;
+
 }
 
 h1 {
@@ -29,6 +31,7 @@ h1 {
 }
 p{
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 a {
@@ -64,13 +67,15 @@ a:hover {
 }
 
 .bio{
-  padding: 40px;
+  padding: 8px;
   display:flex;
-  gap: 16px;
+  gap: 8 px;
   width:100%;
+
   flex: wrap;
   color: white;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   background-color:  #A6D0DD;
 }
 .title{
@@ -78,7 +83,7 @@ a:hover {
 }
 
 .thin-dash {
-  width: 400px;
+  width: 100%;
   border-top:  1px solid #F6F4EB;
 }
 .about-text {
@@ -95,8 +100,8 @@ a:hover {
   justify-content: center;
   align-items: center;
   /* width:460px; */
-  border: 1px solid white;
-  border-radius: 12px;
+  /* border: 1px solid white;
+  border-radius: 12px; */
 }
 #resume{
   /* background-color: red; */
@@ -119,7 +124,7 @@ a:hover {
 
 }
 #lang-icon {
-  font-size: 160px;
+  font-size: 152px;
 }
 .project-container {
   margin: 40px;
@@ -256,9 +261,15 @@ ul,
 @media (max-width: 600px) {
 
 
-  .wrapper {
-    min-width:100%;
+  .wrapper-main {
+    width:100%;
     display: block;
+  }
+  .project-img {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 12px;
+    height:100%;
   }
   .card {
     background-color: #A6D0DD;
@@ -277,8 +288,8 @@ ul,
   }
 
   .img-circle {
-    height: auto; /* Let the image adjust its height */
-    width: 100%; /* Make the image full width on smaller screens */
+    height: 75%; /* Let the image adjust its height */
+    /* width: 75%; Make the image full width on smaller screens */
   }
 
   .inline-list {
@@ -294,20 +305,28 @@ ul,
   /* Add more styles as needed for smaller screens */
 }
 
+/* @media (min-width: 601px) {
 
+
+  .wrapper {
+    width:100%;
+    /* display: block; */
+  /* }
+} */
 
 /* ... (your existing styles for mobile) */
 @media (min-width: 768px) {
     body {
-        background-color: white;
+
         color: black;
     }
 
-    .wrapper {
+    .wrapper-main {
         max-width: 100%;
         margin: 0 auto;
         display: block;
     }
+
 
     /* Add more styles for larger screens here */
 }
@@ -315,7 +334,7 @@ ul,
 /* Adjust styles for screens 1024px and larger */
 @media (min-width: 1024px) {
     /* Additional styles for larger screens (e.g., desktops) */
-    .wrapper{
+    .wrapper-main {
         max-width: 100%;
     }
 
