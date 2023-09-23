@@ -19,6 +19,9 @@ body {
 .wrapper-main {
  width: 1200px;
  background-color: #A6D0DD;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
 
 }
 
@@ -286,6 +289,19 @@ ul,
     padding: 20px;
     display: block;
   }
+  #project-photo {
+    height:200px;
+  }
+  .thin-dash {
+    width: 100%;
+    border-top:  1px solid #F6F4EB;
+  }
+  .about-text {
+    text-align: center;
+    padding: 40px;
+    color: white;
+    color:black;
+  }
 
   .img-circle {
     height: 75%; /* Let the image adjust its height */
@@ -297,9 +313,13 @@ ul,
   }
 
   .bio {
-    padding: 20px; /* Adjust padding for the bio section on smaller screens */
+    padding: 20px;
+    text-align: center;
+ /* Adjust padding for the bio section on smaller screens */
     /* Additional styles to make divs stack in a single column */
-    display: block; /* Ensure divs are displayed as blocks (one on top of the other) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ensure divs are displayed as blocks (one on top of the other) */
   }
 
   /* Add more styles as needed for smaller screens */
