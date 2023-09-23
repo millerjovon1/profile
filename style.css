@@ -17,7 +17,7 @@ body {
     padding: 0;
 }
 .wrapper-main {
- width: 1200px;
+ width:  1600px;
  background-color: #A6D0DD;
  display: flex;
  flex-direction: column;
@@ -72,13 +72,13 @@ a:hover {
 .bio{
   padding: 8px;
   display:flex;
-  gap: 8 px;
-  width:100%;
+  /* gap: 8 px; */
+  /* width:100%; */
 
   flex: wrap;
   color: white;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color:  #A6D0DD;
 }
 .title{
@@ -86,14 +86,13 @@ a:hover {
 }
 
 .thin-dash {
-  width: 360px;
+  width: 464px;
   border-top:  1px solid #F6F4EB;
 }
 .about-text {
   text-align: center;
   padding: 40px;
   color: white;
-  color:black;
 }
 
 
@@ -102,9 +101,9 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width:460px; */
-  /* border: 1px solid white;
-  border-radius: 12px; */
+  width:464px;
+  border: 1px solid white;
+  border-radius: 12px;
 }
 #resume{
   /* background-color: red; */
@@ -133,7 +132,7 @@ a:hover {
   margin: 40px;
   text-align: center;
   text-shadow: #44423d;
-
+  border-top: 1px solid black;
 }
 .project-card {
   color: black;
@@ -253,13 +252,13 @@ ul,
 
 
 .card {
-  background-color: #F6FAFB;
+  /* background-color: #F6FAFB; */
   padding: 40px;
   /* margin: 20px 0px; */
   text-align: center;
-  border-radius: 8px;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-  /* background-color: #A6D0DD; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0px 10px 30px rgba(0,0,0,0.1); */
+  background-color: #A6D0DD;
 }
 @media (max-width: 600px) {
 
@@ -283,11 +282,16 @@ ul,
     box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
     /* background-color: #A6D0DD; */
   }
+  .project-container{
+    color: black;
+  }
   .project-card {
-    color: white;
+    color: black;
     text-shadow: #44423d;
     padding: 20px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   #project-photo {
     height:200px;
@@ -299,8 +303,10 @@ ul,
   .about-text {
     text-align: center;
     padding: 40px;
-    color: white;
-    color:black;
+    color: white;;
+  }
+  #lang-icon {
+    font-size: 96px;
   }
 
   .img-circle {
@@ -320,6 +326,9 @@ ul,
     display: flex;
     flex-direction: column;
     justify-content: center; /* Ensure divs are displayed as blocks (one on top of the other) */
+  }
+  .profile{
+    border: none;
   }
 
   /* Add more styles as needed for smaller screens */
