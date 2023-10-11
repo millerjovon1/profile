@@ -12,12 +12,12 @@ body {
     font-size: 16px;
     line-height: 1.5;
     background-color: #A6D0DD;
-    color: white;
+    color: #242847;
     margin: 0;
     padding: 0;
 }
 .wrapper-main {
- width:  1600px;
+ width:  1400px;
  background-color: #A6D0DD;
  display: flex;
  flex-direction: column;
@@ -38,7 +38,7 @@ p{
 }
 
 a {
-  color:  #F6FAFB;
+  color: #242847;
   text-decoration: none;
   transition: opacity 0.3s ease;
 
@@ -54,8 +54,7 @@ a:hover {
   height: 300px;
   width: 300px;
   margin: 16px;
-  /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  /* filter: grayscale(100%); */
+
 }
 
 .inline-list{
@@ -76,7 +75,7 @@ a:hover {
   /* width:100%; */
 
   flex: wrap;
-  color: white;
+  color: #242847;
   align-items: center;
   justify-content: space-around;
   background-color:  #A6D0DD;
@@ -86,13 +85,13 @@ a:hover {
 }
 
 .thin-dash {
-  width: 464px;
-  border-top:  1px solid #F6F4EB;
+  width: 400px;
+  border-top:  1px solid #242847;
 }
 .about-text {
   text-align: center;
   padding: 40px;
-  color: white;
+  color: #242847;
 }
 
 
@@ -101,8 +100,8 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:464px;
-  border: 1px solid white;
+  width:400px;
+  border: 1px solid #242847;
   border-radius: 12px;
 }
 #resume{
@@ -126,16 +125,17 @@ a:hover {
 
 }
 #lang-icon {
-  font-size: 160px;
+  font-size: 120px;
 }
 .project-container {
   margin: 40px;
   text-align: center;
   text-shadow: #44423d;
-  border-top: 1px solid black;
+  border-top: 1px solid #242847;
+  color:#242847;
 }
 .project-card {
-  color: black;
+  color: #242847;
   text-shadow: #44423d;
   padding: 40px;
   display: flex;
@@ -151,14 +151,14 @@ a:hover {
 }
 .project-info-text {
   margin: 12px 12px;
-  color:black;
+  color:#242847;
   border-top: 1px solid black;
   display: flex;
   flex-direction: column;
   width:360px;
 }
 .project-img {
-  border: 1px solid black;
+  border: 1px solid #242847;
   padding: 20px;
   border-radius: 12px;
 }
@@ -178,7 +178,7 @@ a:hover {
   display:grid;
   grid-template-columns: 1fr 1fr;
   border-radius: 12px;
-  border: 1px solid black;
+  border: 1px solid #242847;
   padding: 20px;
 }
 
@@ -186,7 +186,7 @@ a:hover {
 
 
 #app-link {
-  color: black
+  color:#242847
 }
 
 .skill-cycle {
@@ -201,7 +201,7 @@ a:hover {
 ul,
 #skills {
   margin: 4px;
-  color:  #F6FAFB;
+  color:  #242847;
   padding: 4px;
 }
 
@@ -252,12 +252,10 @@ ul,
 
 
 .card {
-  /* background-color: #F6FAFB; */
   padding: 40px;
-  /* margin: 20px 0px; */
+
   text-align: center;
-  /* border-radius: 8px; */
-  /* box-shadow: 0px 10px 30px rgba(0,0,0,0.1); */
+
   background-color: #A6D0DD;
 }
 @media (max-width: 600px) {
@@ -283,10 +281,10 @@ ul,
     /* background-color: #A6D0DD; */
   }
   .project-container{
-    color: black;
+    color:#242847;
   }
   .project-card {
-    color: black;
+    color: #242847;
     text-shadow: #44423d;
     padding: 20px;
     display: flex;
@@ -298,20 +296,19 @@ ul,
   }
   .thin-dash {
     width: 100%;
-    border-top:  1px solid #F6F4EB;
+    border-top:  1px solid #242847;
   }
   .about-text {
     text-align: center;
     padding: 40px;
-    color: white;;
+    color: #242847;
   }
   #lang-icon {
     font-size: 96px;
   }
 
   .img-circle {
-    height: 75%; /* Let the image adjust its height */
-    /* width: 75%; Make the image full width on smaller screens */
+    height: 75%;
   }
 
   .inline-list {
@@ -319,10 +316,8 @@ ul,
   }
 
   .bio {
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
- /* Adjust padding for the bio section on smaller screens */
-    /* Additional styles to make divs stack in a single column */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Ensure divs are displayed as blocks (one on top of the other) */
@@ -351,7 +346,7 @@ ul,
     }
 
     .wrapper-main {
-        max-width: 100%;
+        /* max-width: 100%; */
         margin: 0 auto;
         display: block;
     }
