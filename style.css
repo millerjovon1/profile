@@ -46,8 +46,23 @@ a {
 a:hover {
   opacity: .5;
 }
+.section {
+  opacity: 0;
+  transform: translateY(30px); /* Adjust this value for how much you want it to move up */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Adjust timing for smoothness */
+}
 
+/* Make the section visible with animation */
+.section.visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to the original position */
+}
 
+/* Optional: If you want a reverse animation when leaving the viewport */
+.section:not(.visible) {
+  opacity: 0;
+  transform: translateY(30px);
+}
 
 .img-circle {
   border-radius: 200px;
@@ -149,6 +164,20 @@ a:hover {
   align-items: center;
 
 }
+
+@media (max-width: 600px) {
+
+.flip-it{
+  max-width: 300px;
+  width: 100%;
+}
+.project-info-text{
+  max-width: 300px;
+  width: 100%;
+}
+  /* Add more styles as needed for smaller screens */
+}
+
 .project-info-text {
   margin: 12px 12px;
   color:#242847;
@@ -182,7 +211,10 @@ a:hover {
   padding: 20px;
 }
 
-
+.project-photo{
+  max-width: 800px;
+  width: 100%;
+}
 
 
 #app-link {
@@ -291,7 +323,7 @@ ul,
     flex-direction: column;
     justify-content: center;
   }
-  #project-photo {
+  .project-photo {
     height:200px;
   }
   .thin-dash {
